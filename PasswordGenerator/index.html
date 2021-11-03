@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">Random Password Generator</div>
+            <div class="result">
+                <input id="resultTextBox" type="text" readonly>
+            </div>
+            <div class="passLength">
+                Password Length<input id="lengthTextBox" type="text">
+            </div>
+            <div class="options">
+                <input id="lowerCheckBox" type="checkbox"> Include Lowercase</input>
+                <br>
+                <input id="upperCheckBox" type="checkbox"> Include Uppercase</input>
+                <br>
+                <input id="numberCheckBox" type="checkbox"> Include Numbers</input>
+                <br>
+                <input id="symbolCheckBox" type="checkbox"> Include Symbols</input>
+            </div>
+            <div class="submit">
+                <button id="generateBtn" type="button">Generate</button>
+            </div>
+        </div>
+        <!--The call to the external .js file-->
+        <script src="password.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: lightpink;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 3px #888888;
+    width: 40%;
+    min-height: 50vh;
+}
+
+.header {
+    font-size: 36px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.result {
+    font-size: 30px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+#resultTextBox {
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 1vw;
+}
+
+.passLength {
+    font-size: 24px;
+    margin-left: 15%;
+    padding-top: 5%;
+}
+
+#lengthTextBox {
+    border-radius: 10px;
+    width: 20%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.options {
+    font-size: 24px;
+    margin-left: 15%;
+    padding-top: 2.5%;
+}
+
+#upperCheckBox, #numberCheckBox, #symbolCheckBox {
+    margin-top: 2.5%;
+}
+
+.submit {
+    font-size: 24px;
+    padding-top: 5%;
+    margin-left: 15%;
+}
+
+#generateBtn {
+    border-radius: 10px;
+    width: 150px;
+}
+
+#generateBtn:hover {
+    background-color: #fadbdb;
+}
+
+@media only screen
+and (max-width : 768px) {
+    .wrapper {
+        left: 10%;
+        width: 80%;
+    }
+    .header {
+        font-size: 24px;
+    }
+    .result {
+        font-size: 20px;
+    }
+    #resultTextBox {
+        padding-left: 2.5vw;
+    }
+    .passLength {
+        margin-top: 5%;
+        font-size: 14px;
+    }
+    .options {
+        font-size: 14px;
+    }
+    .submit {
+        margin-top: 5%;
+        font-size: 14px;
+    }
+    #generateBtn {
+        width: 125px;
+    }
+}
+
